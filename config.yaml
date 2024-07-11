@@ -1,8 +1,9 @@
 baseURL: https://rytisk.github.io/
 languageCode: en-us
-title: Blog
+title: Supposed to be a Blog
 theme: mini
 paginate: 5
+googleAnalytics: "G-LBPFB07FCQ"
 
 permalinks:
   posts: /posts/:title/
@@ -18,11 +19,9 @@ social:
 
 
 params:
-  bio: Software Engineer
-  description: Blog
   enableRSS: false
   enableComments: false
-  enableGoogleAnalytics: false
+  enableGoogleAnalytics: true
   showPowerBy: false
   hiddenPostSummaryInHomePage: true
   copyright: '© 2024 rytisk'
