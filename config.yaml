@@ -1,0 +1,28 @@
+baseURL: https://rytisk.github.io/
+languageCode: en-us
+title: Blog
+theme: mini
+paginate: 5
+
+permalinks:
+  posts: /posts/:title/
+
+markup:
+  highlight:
+    guessSyntax: true
+    style: friendly
+
+
+social:
+  github: https://github.com/rytisk
+
+
+params:
+  bio: Software Engineer
+  description: Blog
+  enableRSS: false
+  enableComments: false
+  enableGoogleAnalytics: false
+  showPowerBy: false
+  hiddenPostSummaryInHomePage: true
+  copyright: '© 2024 rytisk'
