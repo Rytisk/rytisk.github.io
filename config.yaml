@@ -5,9 +5,6 @@ theme: mini
 paginate: 5
 googleAnalytics: "G-LBPFB07FCQ"
 
-permalinks:
-  posts: /posts/:title/
-
 markup:
   highlight:
     guessSyntax: true
