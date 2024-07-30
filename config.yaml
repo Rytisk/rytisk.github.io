@@ -4,16 +4,15 @@ title: Supposed to be a Blog
 theme: mini
 paginate: 5
 googleAnalytics: "G-LBPFB07FCQ"
+enableEmoji: true
 
 markup:
   highlight:
     guessSyntax: true
     style: friendly
 
-
 social:
   github: https://github.com/rytisk
-
 
 params:
   enableRSS: false
