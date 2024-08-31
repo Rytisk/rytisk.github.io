@@ -8,8 +8,11 @@ enableEmoji: true
 
 markup:
   highlight:
-    guessSyntax: true
+    guessSyntax: false
     style: friendly
+    lineNoStart: 1
+    lineNos: true
+    tabWidth: 4
 
 social:
   github: https://github.com/rytisk
