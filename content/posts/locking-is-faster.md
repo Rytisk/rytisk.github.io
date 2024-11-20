@@ -77,14 +77,14 @@ func BenchmarkWithLock(b *testing.B) {
 ```
 
 And the results were a bit suprising to my not-so-experienced-in-Go-yet eyes. Why is the lockless option slower?
-```
+```txt
 cpu: Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz
 BenchmarkWithoutLock-4         	 5010553	       234.1 ns/op
 BenchmarkWithLock-4            	14815070	        80.40 ns/op
 ```
 
 I ran the same benchmark without the `RunParallel`, so that the code ran serially, and I got results where the lockless approach was a bit faster:
-```
+```txt
 cpu: Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz
 BenchmarkSeriallyWithoutLock-4   	33334258	        36.93 ns/op
 BenchmarkSeriallyWithLock-4      	25462245	        47.32 ns/op

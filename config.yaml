@@ -10,8 +10,6 @@ markup:
   highlight:
     guessSyntax: false
     style: friendly
-    lineNoStart: 1
-    lineNos: true
     tabWidth: 4
 
 social:

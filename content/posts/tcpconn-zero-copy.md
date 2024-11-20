@@ -173,7 +173,7 @@ func (nzc *noZeroCopyConn) Write(b []byte) (int, error) {
 ```
 
 And the results I got were as expected: zero-copy was indeed faster and used 99.93% less memory.
-```
+```txt
 goos: linux
 goarch: amd64
 cpu: Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
