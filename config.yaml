@@ -1,24 +1,23 @@
 baseURL: https://rytisk.github.io/
 languageCode: en-us
-title: Supposed to be a Blog
-theme: mini
+title: Rytis Kaplūnas
 paginate: 5
-googleAnalytics: "G-LBPFB07FCQ"
 enableEmoji: true
 
 markup:
   highlight:
     guessSyntax: false
-    style: friendly
+    style: gruvbox
     tabWidth: 4
+    linenos: false
 
 social:
   github: https://github.com/rytisk
 
 params:
+  mainSections: ["posts"]
   enableRSS: false
   enableComments: false
-  enableGoogleAnalytics: true
   showPowerBy: false
   hiddenPostSummaryInHomePage: true
-  copyright: '© 2024 rytisk'
+  copyright: '© 2026 rytisk'

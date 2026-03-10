@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="post-list">
+
+    {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Section" "posts") }}
+
+    {{ range $paginator.Pages }}
+      <article class="post-item">
+        <h2 class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="post-meta">
+          <time datetime="{{ .Date }}">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </time>
+
+          {{ with .Params.tags }}
+            <span class="post-tags">
+              {{ range . }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </span>
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
+
+  </section>
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+        <a class="prev" href="{{ $paginator.Prev.URL }}">← Newer</a>
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        <a class="next" href="{{ $paginator.Next.URL }}">Older →</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+{{ end }}
