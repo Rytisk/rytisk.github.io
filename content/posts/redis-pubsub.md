@@ -1,5 +1,5 @@
 ---
-title: "Dynamically created Redis Subscriptions"
+title: "Dynamically Created Redis Subscriptions"
 date: 2026-01-02
 tags: ["go", "redis"]
 ---
